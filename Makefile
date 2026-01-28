@@ -43,7 +43,7 @@ generate-icon:
 	echo "Generating icons with name: $$FINAL_NAME.png"; \
 	echo "Generating ldpi (25% of original)..."; \
 	magick "$(SOURCE)" -scale 25% "m-drawable/drawable-ldpi/$$FINAL_NAME.png"; \
-	echo "Generating mdpi (50% - original size)..."; \
+	echo "Generating mdpi (50% of original)..."; \
 	magick "$(SOURCE)" -scale 50% "m-drawable/drawable-mdpi/$$FINAL_NAME.png"; \
 	echo "Generating hdpi (75% of original)..."; \
 	magick "$(SOURCE)" -scale 75% "m-drawable/drawable-hdpi/$$FINAL_NAME.png"; \
